@@ -13,9 +13,7 @@
 }
 
 .presentation__photo {
-  position: relative;
-  left: 50px;
-  top: 45px;
+  display: none;
 }
 
 .presentation__headline {
@@ -27,4 +25,78 @@
   font-size: 14px;
   line-height: 1.71;
   color: #283645;
+}
+
+.presentation__clock-wrapper{
+  display: none;
+  width: 800px;
+}
+.presentation__clock-link{
+  color: red;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__clock-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__clock-text-wrraper{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__list {
+    width: 945px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 350px;
+    margin-right: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__list {
+    width: 945px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__item {
+    margin-right: 140px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .presentation__headline {
+    width: 130px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__photo {
+    display: block;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__clock-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-left: 340px;
+  }
 }

@@ -1,5 +1,5 @@
 .page-header {
-  background-color: #283645;
+  background: #283645;
   width: 320px;
 }
 
@@ -7,4 +7,25 @@
   position: relative;
   left: 20px;
   top: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 800px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 2000px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    margin-right: 173px;
+  }
 }

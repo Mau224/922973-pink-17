@@ -15,12 +15,39 @@
 }
 
 .main-info__font-photo {
-  position: absolute;
-  bottom: 140px;
-  left: -100px;
-}
-
-.main-info__background-photo {
   position: relative;
   bottom: 20px;
+  left: -100px;
+}
+@media (min-width: @tablet-width) {
+  .main-info__font-photo{
+    position: absolute;
+    left: 70px;
+    bottom: -350px;
+    width: 800px;
+    height: 600px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-info__font-photo{
+    position: absolute;
+    bottom: 80px;
+    left: 220px;
+    width: 800px;
+    height: 500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-info__font-text{
+    width: 348px;
+    height: 99px;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 30%;
+  }
 }
