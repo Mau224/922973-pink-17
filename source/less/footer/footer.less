@@ -1,6 +1,7 @@
 .footer {
   width: 320px;
-  height: 284px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__footer-logo {
@@ -8,7 +9,36 @@
   margin-left: 60px;
 }
 
-.footer__copyright-text {
-  display: flex;
-  align-items: baseline;
+@media (min-width: @tablet-width) {
+  .footer {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  .footer__footer-logo {
+    width: 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }

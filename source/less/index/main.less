@@ -1,12 +1,48 @@
 .page-main {
   width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-main__headline {
   width: 202px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 24px;
-  margin-left: 60px;
   text-align: center;
   color: #283645;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-main__headline {
+    width: 430px;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-main__headline {
+    width: 731px;
+    font-size: 50px;
+    font-style: normal;
+    text-align: center;
+  }
 }

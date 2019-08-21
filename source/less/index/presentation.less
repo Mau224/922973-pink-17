@@ -6,6 +6,8 @@
   text-align: center;
   list-style: none;
   background-color: #eeeeee;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .presentation__item {
@@ -13,9 +15,7 @@
 }
 
 .presentation__photo {
-  position: relative;
-  left: 50px;
-  top: 45px;
+  display: none;
 }
 
 .presentation__headline {
@@ -27,4 +27,97 @@
   font-size: 14px;
   line-height: 1.71;
   color: #283645;
+}
+
+.presentation__clock-wrapper {
+  display: none;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.presentation__clock-link {
+  color: red;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__clock-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .presentation__clock-text-wrraper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 70px;
+  }
+
+  .presentation__clock-link {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d22856;
+    text-decoration: underline;
+  }
+
+  .presentation__list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .presentation__headline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__list {
+    width: 945px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__item {
+    margin-right: 140px;
+  }
+
+  .presentation__headline {
+    width: 130px;
+  }
+
+  .presentation__photo {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .presentation__clock-link {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d22856;
+    text-decoration: underline;
+  }
+
+  .presentation__clock-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

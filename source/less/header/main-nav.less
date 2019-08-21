@@ -8,3 +8,55 @@
 .main-nav__list {
   padding: 0;
 }
+
+.main-nav__hard-text {
+  display: none;
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    position: relative;
+    left: 100%;
+    top: 10px;
+    background: none;
+    border: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__application-navigation {
+    width: 350px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__hard-text {
+    display: block;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__hard-text {
+    display: block;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__application-navigation {
+    width: 350px;
+  }
+}

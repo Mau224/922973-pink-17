@@ -1,6 +1,5 @@
 .main-info__font-text {
   width: 226px;
-  height: 82px;
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -14,13 +13,26 @@
   margin-top: 36px;
 }
 
-.main-info__font-photo {
-  position: absolute;
-  bottom: 140px;
-  left: -100px;
+@media (min-width: @tablet-width) {
+  .main-info__font-text {
+    width: 348px;
+    font-size: 23px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 27%;
+  }
 }
 
-.main-info__background-photo {
-  position: relative;
-  bottom: 20px;
+@media (min-width: @desktop-width) {
+  .main-info__font-text {
+    width: 500px;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 30%;
+  }
 }
