@@ -8,45 +8,44 @@
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__wrraper">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.svg" width="74" height="32" alt="логотип">
+<header class="page-header">
+  <div class="page-header__wrraper">
+    <nav class="main-nav main-nav--opened">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.svg" width="74" height="32" alt="логотип">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <img src="img/menu-cross-svg.svg" width="24" height="24" alt="закрыть">
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-          <div class="main-info__background">
-            <h1 class="main-info__font-text">Фотографии пользователей</h1>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="main-info__background">
+    <h1 class="main-info__font-text">Фотографии пользователей</h1>
+  </div>
+</header>
 
   <main class="main-photo">
     <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         <div class="reviews-block__wrapper-main">
+            <img class="reviews__author-image main-photo" src="img/panorama-desktop-jpg.jpg" width="280" height="137" alt="фото автора">
           <blockquote class="reviews__item-main">
-            <img class="reviews__author-image main-photo" src="img/panorama-mobile-jpg.jpg" width="280" height="137" alt="фото автора">
             <cite class="reviews__author-name">Анна</cite>
             <p class="reviews__text main-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           </blockquote>

@@ -10,6 +10,17 @@
   border-radius: 20px;
   padding: 15px;
   margin-left: 60px;
+  margin-top: 20px;
+  background: none;
+}
+
+.application-navigation__link:hover {
+  color: #d22856;
+  background: white;
+}
+
+.application-navigation__link:active {
+  color: rgba(210, 40, 86, 0.3);
 }
 
 .application-navigation__wrapper {
@@ -37,15 +48,16 @@
     margin-bottom: 100px;
     margin-top: 100px;
   }
-}
 
-@media (min-width: @tablet-width) {
+  .application-navigation__link-wrapper {
+    width: 350px;
+    text-align: center;
+  }
+
   .application-navigation__text {
     margin-left: 50px;
   }
-}
 
-@media (min-width: @tablet-width) {
   .application-navigation__link {
     margin-right: 55px;
   }
@@ -54,12 +66,5 @@
 @media (min-width: @desktop-width) {
   .application-navigation__link {
     margin-bottom: 75px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .application-navigation__wrapper {
-    margin-bottom: 100px;
-    margin-top: 100px;
   }
 }
