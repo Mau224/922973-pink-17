@@ -8,13 +8,20 @@
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
-  <header class="page-header active-font-photo">
+  <header class="page-header .page-header--active">
     <div class="page-header__wrraper">
       <nav class="main-nav main-nav--opened">
-        <a class="main-nav__logo">
+        <div class="main-nav__logo">
           <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.svg" width="74" height="32" alt="логотип">
-        </a>
+        </div>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__toggle-closed" xmlns="http://www.w3.org/2000/svg" width="24" height="23" version="1" viewBox="0 0 49.945 24.007">
+            <path fill="#FFF" d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"/>
+            <path fill="#FFF" d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"/>
+          </svg>
+          <svg class="main-nav__toggle-opened" xmlns="http://www.w3.org/2000/svg" width="23.867" height="23.867" version="1" viewBox="0 0 23.867 23.867">
+            <path fill="#FFF" d="M15.087 11.933l8.56-8.559a.75.75 0 0 0 0-1.061L21.554.22a.747.747 0 0 0-1.06 0l-8.561 8.56L3.373.22a.771.771 0 0 0-1.061 0L.22 2.313a.75.75 0 0 0 0 1.061l8.56 8.559-8.56 8.559a.751.751 0 0 0 0 1.062l2.093 2.094a.744.744 0 0 0 1.06 0l8.561-8.56 8.56 8.56a.746.746 0 0 0 1.06 0l2.093-2.094a.751.751 0 0 0 0-1.062l-8.56-8.559z"/>
+          </svg>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -69,8 +76,6 @@
         </li>
       </ul>
         <div class="presentation__clock-wrapper">
-            <p class="presentation__clock-numeral">24</p>
-            <img class="presentation__clock-photo" src="img/timer-svg.svg" width="250" height="250" alt="часы">
             <div class="presentation__clock-text-wrraper">
               <p class="presentation__clock-headline">Эффект на 24 часа</p>
               <p class="presentation__clock-text">Британские ученые провели исследованияи доказали, что положительный

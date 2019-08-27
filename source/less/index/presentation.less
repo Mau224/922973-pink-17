@@ -46,13 +46,32 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 150px;
+  }
+
+  .presentation__clock-wrapper::before {
+    content: "24";
+    color: #d22856;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    font-size: 120px;
+    padding-top: 20px;
+    background-image: url("../img/timer-svg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+    opacity: 0.3;
   }
 
   .presentation__clock-text-wrraper {
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin-left: 70px;
+    margin-left: 350px;
   }
 
   .presentation__clock-link {
@@ -71,6 +90,9 @@
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 350px;
+    background-image: url("../img/iphone-screen-3.png");
+    background-repeat: no-repeat;
   }
 
   .presentation__headline {
@@ -87,6 +109,8 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    background: none;
+    padding-left: 80px;
   }
 }
 
@@ -119,6 +143,12 @@
     padding: 15px;
     bottom: -116%;
     left: 368px;
+  }
+
+  .presentation__clock-text-wrraper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
   }
 
   .presentation__clock-link {

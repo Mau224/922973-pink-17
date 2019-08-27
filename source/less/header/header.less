@@ -15,23 +15,29 @@
 
   .page-header__wrraper {
     width: 660px;
+    text-align: center;
+    background: url("../img/iphone-6-copy.png"),
+      url("../img/back-desktop-jpg.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: center, auto;
     margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header .active-font-photo {
+  .page-header .page-header--active {
     background: url("../img/iphone-6.png"),
       url("../img/back-desktop-jpg.jpg");
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background-position: bottom, cover;
+    background-repeat: no-repeat, no-repeat;
     background-size: center, auto;
     border: none, #283645;
     margin: 0 auto;
   }
 
   .page-header {
-    background: url("../img/back-desktop-jpg.jpg");
+    background-image: url("../img/back-desktop-jpg.jpg");
   }
 
 
