@@ -1,11 +1,11 @@
 .presentation__list {
+  position: relative;
   width: inherit;
   padding-right: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
   list-style: none;
-  background-color: #eeeeee;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,7 +46,7 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 150px;
+    position: relative;
   }
 
   .presentation__clock-wrapper::before {
@@ -64,7 +64,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 75%;
-    opacity: 0.3;
+  }
+
+  .presentation__clock-wrapper::after {
+    content: "";
+    color: #d22856;
+    top: 93px;
+    left: 62px;
+    border: #d22856 solid 15px;
+    position: absolute;
+    width: 195px;
+    height: 192px;
+    border-radius: 50%;
+    text-align: center;
   }
 
   .presentation__clock-text-wrraper {
@@ -72,6 +84,7 @@
     flex-direction: column;
     width: 300px;
     margin-left: 350px;
+    margin-top: 50px;
   }
 
   .presentation__clock-link {
@@ -86,6 +99,7 @@
 
   .presentation__list {
     display: flex;
+    position: relative;
     flex-direction: column;
     text-align: left;
     margin-left: auto;
@@ -93,17 +107,26 @@
     padding-left: 350px;
     background-image: url("../img/iphone-screen-3.png");
     background-repeat: no-repeat;
+    background-color: none;
   }
 
   .presentation__headline {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .presentation__clock-headline {
+    width: 154px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .presentation__list {
-    width: 945px;
+    width: 870px;
+    position: relative;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -111,10 +134,9 @@
     margin-right: auto;
     background: none;
     padding-left: 80px;
+    z-index: 5;
   }
-}
 
-@media (min-width: @desktop-width) {
   .presentation__item {
     margin-right: 140px;
   }
@@ -161,10 +183,21 @@
     text-decoration: underline;
   }
 
+  .presentation__clock-headline{
+    width: auto;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
   .presentation__clock-wrapper {
+    width: 960px;
     display: flex;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #ececec;
+    position: relative;
+    padding-bottom: 230px;
+    padding-left: auto;
+    padding-right: auto;
   }
 }

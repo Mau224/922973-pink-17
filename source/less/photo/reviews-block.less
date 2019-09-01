@@ -1,11 +1,11 @@
 .reviews-block__wrapper {
-  background-color: #eeeeee;
   margin-bottom: 20px;
 }
 
 .reviews-block__wrapper-main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 @media (min-width: @tablet-width) {
@@ -18,7 +18,13 @@
 
   .reviews-block__wrapper {
     width: 300px;
-    background-color: #eeeeee;
+    display: flex
+  }
+
+  .reviews-block__wrapper-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -32,12 +38,6 @@
 
   .reviews-block__wrapper {
     width: 310px;
-    background-color: #eeeeee;
-  }
-
-  .reviews-block__wrapper-main {
-    display: flex;
-    flex-direction: column;
-    width: 960px;
+    display: flex
   }
 }
