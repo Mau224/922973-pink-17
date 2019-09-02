@@ -8,6 +8,13 @@
   list-style: none;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 70px;
+  padding-bottom: 330px;
+  background-image: url("../img/iphone-screen-3-mobali.png");
+  background-repeat: no-repeat;
+  background-color: #ececec;
+  background-position: center;
+  background-position-y: calc(100% + 68px);
 }
 
 .presentation__item {
@@ -31,7 +38,7 @@
 
 .presentation__clock-wrapper {
   display: none;
-  width: 800px;
+  width: 660px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,6 +54,12 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    background-color: white;
+    margin-top: -14px;
+  }
+
+  .presentation__clock-background-wrraper {
+    background-color: white;
   }
 
   .presentation__clock-wrapper::before {
@@ -107,7 +120,10 @@
     padding-left: 350px;
     background-image: url("../img/iphone-screen-3.png");
     background-repeat: no-repeat;
-    background-color: none;
+    background-color: transparent;
+    background-position: top left;
+    margin-top: none;
+    padding-bottom: 0;
   }
 
   .presentation__headline {
@@ -133,6 +149,8 @@
     margin-left: auto;
     margin-right: auto;
     background: none;
+    background-color: none;
+    margin-top: none;
     padding-left: 80px;
     z-index: 5;
   }
@@ -183,7 +201,7 @@
     text-decoration: underline;
   }
 
-  .presentation__clock-headline{
+  .presentation__clock-headline {
     width: auto;
     margin: 0;
     font-size: 30px;

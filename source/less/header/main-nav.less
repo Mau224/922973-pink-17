@@ -1,4 +1,7 @@
 .main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   position: relative;
 
   width: 320px;
@@ -7,36 +10,24 @@
   background-color: #283645;
 }
 
+.main-nav__wrapper-logo {
+  display: flex;
+  justify-content: space-between;
+  width: 295px;
+  margin-left: 15px;
+  padding-bottom: 20px;
+}
+
 .main-nav__logo {
   position: relative;
-  left: 41px;
   top: 10px;
 }
 
-.main-nav__toggle--closed {
-  position: absolute;
-  top: 0;
-  right: -12px;
+.main-nav__toggle {
+  position: relative;
   z-index: 2;
-
+  top: 10px;
   display: block;
-  width: 70px;
-  height: 50px;
-  background: none;
-
-  cursor: pointer;
-  border: none;
-}
-
-.main-nav__toggle--opened {
-  position: absolute;
-  top: 0;
-  right: 15px;
-  z-index: 2;
-
-  display: block;
-  width: 70px;
-  height: 50px;
   background: none;
 
   cursor: pointer;
@@ -69,8 +60,6 @@
   display: none;
 }
 
-
-
 .main-nav__hard-text {
   display: none;
   font-size: 50px;
@@ -83,12 +72,12 @@
 .main-nav__application-navigation {
   padding-top: 507px;
   text-align: center;
-  background: url(../img/iphone-5-in-hand-png.png),
-      url(../img/back-mobile-jpg.jpg);
+  background: url("../img/iphone-5-in-hand-png.png"),
+    url("../img/back-mobile-jpg.jpg");
   background-repeat: no-repeat;
   background-size: 150%, 100%;
   margin: 0 auto;
-  background-position: center 38% ,top;
+  background-position: center 38%, top;
 }
 
 @media (min-width: @tablet-width) {
@@ -102,30 +91,18 @@
     background-color: #283645;
   }
 
-  .main-nav__toggle--closed {
-    position: absolute;
-    top: 0;
-    right: 15px;
-    z-index: 2;
-
-    display: block;
-    width: 70px;
-    height: 50px;
-    background: none;
-
-    cursor: pointer;
-    border: none;
+  .main-nav__wrapper-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 625px;
+    margin-left: 20px;
   }
 
-  .main-nav__toggle--opened {
-    position: absolute;
-    top: 0;
-    right: 15px;
+  .main-nav__toggle {
+    position: relative;
     z-index: 2;
 
     display: block;
-    width: 70px;
-    height: 50px;
     background: none;
 
     cursor: pointer;
@@ -149,7 +126,6 @@
 
   .main-nav__logo {
     position: relative;
-    top: 12px;
   }
 }
 
@@ -212,11 +188,26 @@
   .main-nav {
     background: none;
   }
+
+  .main-nav__wrapper {
+    display: flex;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__toggle--opened {
     display: none;
+  }
+
+  .main-nav {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
   }
 
   .main-nav__toggle--closed {
@@ -226,8 +217,11 @@
   .main-nav__logo {
     position: relative;
     width: 147px;
-    left: -220px;
-    top: 66px;
+  }
+
+  .main-nav__wrapper-logo {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
