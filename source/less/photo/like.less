@@ -1,7 +1,8 @@
 .like__wrapper {
   display: flex;
   align-items: baseline;
-  margin-left: 38px;
+  margin-left: 18px;
+  margin-top: auto;
 }
 
 .like__button {
@@ -17,8 +18,28 @@
 @media (min-width: @tablet-width) {
   .like__wrapper-main {
     display: flex;
+    flex-direction: row-reverse;
     align-items: baseline;
-    margin-left: 130px;
+    order: 1;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 12px;
+  }
+
+  .like__button {
+    margin-right: -25px;
+  }
+
+  .like__button--main {
+    margin-right: 10px;
+  }
+
+  .like__wrapper {
+    width: 245px;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    flex-direction: row-reverse;
   }
 }
 
@@ -26,6 +47,7 @@
   .like__wrapper-main {
     display: flex;
     align-items: baseline;
-    margin-left: 330px;
+    order: 1;
+    margin-left: auto;
   }
 }

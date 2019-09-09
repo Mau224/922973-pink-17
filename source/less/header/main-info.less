@@ -8,31 +8,50 @@
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  margin-left: 50px;
-  padding-bottom: 50px;
-  margin-top: 36px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 82px;
+}
+
+.main-info__background {
+  padding-top: 20px;
+  background: #222222 url("../img/back-desktop-jpg.jpg") no-repeat 50%;
 }
 
 @media (min-width: @tablet-width) {
   .main-info__font-text {
-    width: 348px;
-    font-size: 23px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    color: #ffffff;
-    margin-left: 27%;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-info__font-text {
-    width: 500px;
+    width: 470px;
     font-size: 50px;
     font-weight: 300;
     font-style: normal;
     text-align: center;
     color: #ffffff;
-    margin-left: 30%;
+    padding-top: 50px;
+    padding-bottom: 142px;
+  }
+
+  .main-info__background {
+    padding-top: 20px;
+    background: #222222 url("../img/back-desktop-jpg.jpg") no-repeat 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-info__font-text {
+    width: 750px;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 47px;
+    padding-bottom: 102px;
+  }
+
+  .main-info__background {
+    padding-top: 20px;
+    background: none;
   }
 }
