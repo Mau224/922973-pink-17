@@ -3,10 +3,10 @@
   position: relative;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 70px;
+  margin-top: 51px;
   margin-bottom: 50px;
   background-color: #ececec;
-  padding-bottom: 45px;
+  padding-bottom: 36px;
   padding-top: 70px;
 }
 
@@ -63,6 +63,7 @@ table {
   line-height: 1.67;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .static-element {
@@ -74,6 +75,7 @@ table {
   line-height: 2.14;
   letter-spacing: normal;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .tablet-cross {
@@ -89,7 +91,7 @@ table {
 .controls-tablet {
   position: relative;
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 32px;
 }
 
 .tablet-element {
@@ -100,12 +102,16 @@ table {
   background: url("../img/yes-svg.svg");
   background-repeat: no-repeat;
   background-position: 94%;
+  background-position-x: 225px;
 }
 
 .elem-no {
   background: url("../img/no-svg.svg");
   background-repeat: no-repeat;
   background-position: 94%;
+  background-position: 94%;
+  background-position-y: 11px;
+  background-position-x: 226px;
 }
 
 .tablet-hit::before {
@@ -130,6 +136,16 @@ table {
   position: absolute;
 }
 
+.tablet-price {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+}
+
 @media (min-width: @tablet-width) {
   .slider__static {
     width: 660px;
@@ -137,10 +153,10 @@ table {
     margin: 0 auto;
     overflow: visible;
     margin-top: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 46px;
     background-color: #ececec;
-    padding-bottom: 33px;
-    padding-top: 70px;
+    padding-bottom: 76px;
+    padding-top: 29px
   }
 
   .slider__static::before {
@@ -213,8 +229,9 @@ table {
     line-height: 2.14;
     letter-spacing: normal;
     text-align: left;
-    margin-left: 18px;
-    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    text-transform: none;
   }
 
   .tablet-text--main {
@@ -225,6 +242,7 @@ table {
     line-height: 1.67;
     letter-spacing: normal;
     text-align: center;
+    text-transform: uppercase;
   }
 
   .tablet-price {
@@ -232,14 +250,17 @@ table {
     text-align: center;
     font-weight: 300;
     line-height: 1.25;
+    text-transform: uppercase;
   }
 
   .elem {
-    background-position: 50%;
+    background-position-y: 17px;
+    background-position-x: 65px;
   }
 
   .elem-no {
-    background-position: 50%;
+    background-position-y: 12px;
+    background-position-x: 61px;
   }
 
   .controls-tablet {
@@ -256,7 +277,7 @@ table {
     margin-top: 60px;
     margin-bottom: 75px;
     background-color: #ececec;
-    padding-bottom: 98px;
+    padding-bottom: 88px;
     padding-top: 122px;
   }
 
@@ -341,5 +362,14 @@ table {
     top: 0;
     left: 440px;
     position: absolute;
+  }
+
+  .elem {
+    background-position-y: 20px;
+    background-position-x: 100px;
+  }
+  .elem-no {
+    background-position-y: 14px;
+    background-position-x: 102px;
   }
 }
